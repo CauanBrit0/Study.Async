@@ -35,13 +35,7 @@ class FlashcardDesafio(models.Model):
     def __str__(self):
         return self.flashcard.pergunta
 
-class FlashcardDesafio(models.Model):
-    flashcard = models.ForeignKey(Flashcard, on_delete=models.DO_NOTHING)
-    respondido = models.BooleanField(default=False)
-    acertou = models.BooleanField(default=False)
 
-    def __str__(self):
-        return self.flashcard.pergunta
 
 
 class Desafio(models.Model):
